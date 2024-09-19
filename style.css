@@ -98,7 +98,7 @@ header {
 
 /* Nav Bar */
 nav {
-    width: 50%;
+    width: 60%;
     margin: 10px;
 }
 nav a {
@@ -263,8 +263,13 @@ footer {
 /*************
 * Responsive *
 *************/
+@media (max-width: 1350px) {
+    nav {
+        width: 90%;
+    }
+}
 /* IPad */
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .d-flex-hidden {
         display: none;
     }
