@@ -289,7 +289,7 @@ footer {
 }
 
 /* Phone */
-@media (max-width: 400px) {
+@media (max-width: 425px) {
     .logo_container {
         width: 80%;
     }
