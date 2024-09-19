@@ -1,0 +1,243 @@
+/**************
+* Font Import *
+**************/
+@font-face {
+    font-family: 'Lato';
+    src: url("./asset/Fonts/Lato-Regular.ttf");
+}
+@font-face {
+    font-family: 'Sans Source Pro';
+    src: url("./asset/Fonts/SourceCodePro-Regular.ttf");
+}
+
+/*********
+* Global *
+*********/
+body {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Sans Source Pro', serif;
+}
+h1 {
+    margin: 0;
+    color: rgb(0, 61, 72);
+    font-weight: bold;
+}
+.d-flex {
+    display: flex;
+}
+.fd-column {
+    flex-direction: column;
+}
+.fj-between {
+    justify-content: space-between;
+}
+.fj-around {
+    justify-content: space-around;
+}
+.fj-evenly {
+    justify-content: space-evenly;
+}
+.fj-center {
+    justify-content: center;
+}
+.fa-top {
+    align-items: flex-start;
+}
+.fa-center {
+    align-items: center;
+}
+.more_button {
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(247, 116, 98);
+}
+.more_button:hover {
+    cursor: pointer;
+    background-color: rgb(252, 139, 124);
+}
+
+/*********
+* Header *
+*********/
+header {
+    width: 100%;
+    padding: 1.2rem 0;
+}
+.logo_container {
+    width: 20%;
+    cursor: pointer;
+}
+.logo_container img {
+    width: 20%;
+    object-fit: contain;
+}
+.logo_container p {
+    margin: 0;
+    color: rgb(153, 153, 153);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.logo_name {
+    width: 50%;
+    font-family: 'Lato', serif;
+}
+.logo_name_diff {
+    color: rgb(249, 153, 140);
+    font-weight: lighter;
+}
+
+/* Nav Bar */
+nav {
+    width: 50%;
+    margin: 10px;
+}
+nav a {
+    margin: 5px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(120, 120, 120);
+}
+nav a:nth-child(even)::before,
+nav a:nth-child(even)::after {
+    display: inline-block;
+    content: "|";
+    margin: 0 35px;
+    cursor: default;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.selected {
+    color: rgb(109, 197, 221);
+}
+
+/*********
+* Footer *
+*********/
+footer {
+    padding: 1.5rem;
+    color: white;
+    background-color: rgb(109, 197, 221);
+}
+.footer_social {
+    width: 6%;
+}
+.footer_facebook,
+.footer_twitter {
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}
+.footer_facebook_svg {
+    padding: 0.5rem 0.8rem;
+    width: 15px;
+}
+.footer_twitter_svg {
+    padding: 0.5rem 0.6rem;
+    width: 23px;
+}
+
+/*******
+* Main *
+*******/
+
+/* Introduction */
+.Introduction_section {
+    padding-top: 4rem;
+    color: rgb(0, 61, 72);
+    background-color: rgb(236, 236, 236);
+}
+.intro_text {
+    width: 40%;
+}
+.intro_text h2 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+.intro_text p:first-child {
+    margin-bottom: 0;
+    font-size: 1.8rem;
+}
+.intro_text p:last-of-type {
+    font-size: 1.2rem;
+    text-wrap: wrap;
+    color: rgb(120, 120, 120);
+}
+
+/* Articles */
+.Articles_section {
+    padding: 2rem;
+    background-color: rgb(109, 197, 221);
+    color: white;
+}
+.Articles_section article {
+    margin: 1.5rem;
+    width: 25%;
+}
+.Articles_section h3 {
+    margin-top: 0;
+}
+.articles_img_container {
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 50%;
+}
+.articles_img_container img {
+    object-fit: contain;
+}
+.article_img_fix_flag {
+    padding: 0 0.5rem;
+}
+.article_img_fix_camera {
+    padding: 0.1rem 0;
+}
+.read_button {
+    padding: 0.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+}
+.read_button::after {
+    display: inline-block;
+    content: url("asset/Arrow.png");
+    margin-left: 1.5rem;
+}
+.read_button:hover {
+    transition: 0.2s;
+    background-color: rgb(252, 139, 124);
+}
+
+/* Staff */
+.Staff_section {
+    margin: auto;
+}
+.staff_container {
+    width: 80%;
+}
+.staff_container:first-child {
+    margin: 3rem auto 1.5rem;
+}
+.staff_container:last-child {
+    margin: 1.5rem auto 3rem;
+}
+.staff_container_text {
+    margin-left: 2rem;
+}
+.staff_container_text h3 {
+    margin: 0.5rem auto 1.5rem;
+    font-weight: bolder;
+    color: rgb(0, 61, 72);
+}
+.staff_container_text p {
+    margin: 0;
+    color: rgb(120, 120, 120);
+}
