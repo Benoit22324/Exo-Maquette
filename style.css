@@ -24,7 +24,8 @@ h1 {
     color: rgb(0, 61, 72);
     font-weight: bold;
 }
-.d-flex {
+.d-flex,
+.d-flex-hidden {
     display: flex;
 }
 .fd-column {
@@ -47,6 +48,9 @@ h1 {
 }
 .fa-center {
     align-items: center;
+}
+.f-wrap {
+    flex-wrap: wrap;
 }
 .more_button {
     margin-top: 1rem;
@@ -117,6 +121,15 @@ nav a:hover {
 }
 .selected {
     color: rgb(109, 197, 221);
+}
+.burger_menu {
+    display: none;
+}
+.burger_menu svg {
+    width: 30px;
+    margin-right: 50px;
+    color: rgb(236, 236, 236);
+    cursor: pointer;
 }
 
 /*********
@@ -225,6 +238,9 @@ footer {
 .staff_container {
     width: 80%;
 }
+.staff_container img {
+    object-fit: contain;
+}
 .staff_container:first-child {
     margin: 3rem auto 1.5rem;
 }
@@ -242,4 +258,60 @@ footer {
 .staff_container_text p {
     margin: 0;
     color: rgb(120, 120, 120);
+}
+
+/*************
+* Responsive *
+*************/
+/* IPad */
+@media (max-width: 900px) {
+    .d-flex-hidden {
+        display: none;
+    }
+    .burger_menu {
+        display: block;
+    }
+    .logo_container {
+        width: 40%;
+    }
+    .intro_text {
+        margin-bottom: 1.2rem;
+    }
+    .Articles_section article {
+        width: 100%;
+    }
+    .staff_container {
+        width: 95%;
+    }
+    .footer_social {
+        width: 12%
+    }
+}
+
+/* Phone */
+@media (max-width: 400px) {
+    .logo_container {
+        width: 80%;
+    }
+    .Introduction_section img {
+        display: none;
+    }
+    .intro_text {
+        width: 90%;
+    }
+    .Articles_section article {
+        flex-direction: column;
+    }
+    .articles_img_container {
+        margin: 20px auto;
+    }
+    .staff_container {
+        flex-direction: column;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .footer_social {
+        width: 30%
+    }
 }
